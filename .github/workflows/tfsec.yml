@@ -2,7 +2,7 @@ name: TFSec Analysis
 on:
   push:
     branches:
-    - master
+    - main
   pull_request:
 
 jobs:
