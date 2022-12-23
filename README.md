@@ -81,11 +81,11 @@ The environment specific code is present under environments directory.
         Update provider.tf with development bucket name
       
     For staging environment, go to 
-        $ cd Acs-Final-Project/environments/dev
+        $ cd Acs-Final-Project/environments/staging
         Update provider.tf with staging bucket name
         
     For production environment, go to 
-        $ cd Acs-Final-Project/environments/dev
+        $ cd Acs-Final-Project/environments/prod
         Update provider.tf with production bucket name
 ```
 
