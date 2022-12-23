@@ -51,18 +51,6 @@ variable "subnet_name_prefix" {
   description = "Prefix to generate subnet names"
 }
 
-#variable "enable_nat_gateway" {
-#  type        = bool
-#  default     = true
-#  description = "Whether to create NAT Gateway"
-#}
-#
-#variable "enable_internet_gateway" {
-#  type        = bool
-#  default     = true
-#  description = "Whether to create Internet Gateway"
-#}
-
 variable "web_instance_ami" {
   type        = string
   description = "AMI"
@@ -172,5 +160,5 @@ variable "group" {
 variable "s3_bucket_name" {
   type        = string
   description = "s3 bucket to hold index.html"
-  default = "idxbucket1"
+  default = "devs3buck"
 }
