@@ -6,7 +6,7 @@ variable "vpc_security_group_ids" {
 }
 
 variable "tags" {
-  description = "A map of tags to add to all resources"
+  description = "map of tags to add to all resources"
   type        = map(string)
   default     = {}
 }
@@ -17,7 +17,7 @@ variable "vpc_id" {
 
 variable "subnet_id" {
   type        = list(string)
-  description = "Subnet id of load balancer"
+  description = "load balancer subnet id"
 }
 
 variable "listener_port" {
@@ -32,7 +32,7 @@ variable "listener_protocol" {
 
 variable "target_id" {
   type        = string
-  description = "Id of target instance"
+  description = "target instance Id"
 }
 
 variable "enable_deletion_protection" {
