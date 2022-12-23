@@ -34,10 +34,10 @@ The environment specific code is present under environments directory.
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "AllObjectActions",
+            "Sid": "PublicReadGetObject",
             "Effect": "Allow",
             "Principal": "*",
-            "Action": "s3:*Object",
+            "Action": "s3:GetObject",
             "Resource": "arn:aws:s3:::osaliu3finalproject/*"
         }
     ]
