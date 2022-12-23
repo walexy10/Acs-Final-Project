@@ -49,7 +49,7 @@ The environment specific code is present under environments directory.
 
 5. Update index.html with bucket name to be used for respective environment. 
 ```
-   $ cd aws-webapp/environments/dev/web
+   $ cd Acs-Final-Project.git/environments/dev/web
    Change <bucket_name> with actual bucket name
    
    For example:
