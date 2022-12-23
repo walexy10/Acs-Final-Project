@@ -7,7 +7,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "devprojbuck"
+    bucket = "osaliu3finalproject"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }

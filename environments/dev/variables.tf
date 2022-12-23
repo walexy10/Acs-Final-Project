@@ -85,7 +85,7 @@ variable "bastion_instance_name_prefix" {
 variable "aws_ssh_key_pair" {
   type        = string
   description = "AWS SSH key pair"
-  default = "test_key"
+  default = "walexy_key"
 }
 
 variable "alb_listener_port" {
@@ -160,5 +160,5 @@ variable "group" {
 variable "s3_bucket_name" {
   type        = string
   description = "s3 bucket to hold index.html"
-  default = "devs3buck"
+  default = "osaliu3finalproject"
 }
