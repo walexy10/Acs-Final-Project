@@ -23,7 +23,7 @@ variable "tags" {
   default     = {
     Environment   = "Dev"
     Created_using = "Terraform"
-    Group         = "Group2"
+    Group         = "Group19"
   }
 }
 
