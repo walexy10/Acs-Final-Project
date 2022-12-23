@@ -84,7 +84,7 @@ variable "bastion_instance_name_prefix" {
 
 variable "aws_ssh_key_pair" {
   type        = string
-  description = "AWS SSH key pair"
+  description = "SSH key pair"
   default     = "walexy_key"
 }
 
