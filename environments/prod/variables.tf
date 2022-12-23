@@ -18,7 +18,7 @@ variable "vpc_name" {
 }
 
 variable "tags" {
-  description = "A map of tags to add to all resources"
+  description = "map of tags to add to all resources"
   type        = map(string)
   default = {
     Environment   = "Prod"
@@ -121,7 +121,7 @@ variable "web_instance_asg_min_instance_size" {
 
 variable "web_instance_launch_config_name_prefix" {
   type        = string
-  description = "Web instance launcg config name prefix"
+  description = "Web instance launch config name prefix"
   default     = "webprod-"
 }
 
@@ -139,7 +139,7 @@ variable "web_instance_asg_group_cpu_scale_in_threshold_percentage" {
 
 variable "web_instance_scaling_adjustment" {
   type        = number
-  description = "Number of instances by which to scale"
+  description = "Number of instances  to scale"
   default     = 1
 }
 
