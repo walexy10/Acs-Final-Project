@@ -51,20 +51,12 @@ The environment specific code is present under environments directory.
 ```
    $ cd Acs-Final-Project.git/environments/dev/web
    Change <bucket_name> with actual bucket name
-   
-   For example:
-    Update environments/dev/web/index.html with development environment bucket
-    Update environments/staging/web/index.html with staging environment bucket
-    Update environments/staging/web/index.html with production environment bucket
+  
 ```   
 6. Upload index.html and images to respective environment bucket
 ```
    On AWS Console, go to Amazon S3 -> Buckets -> Bucket Name -> Upload
-   
-   For example:
-    Upload environments/dev/web/index.html  and environments/dev/web/images to development environment bucket
-    Upload environments/staging/web/index.html and environments/staging/web/images to staging environment bucket
-    Upload environments/prod/web/index.html and environments/prod/web/images to production environment bucket
+  
 ``` 
 7. Update bucket for terraform state file
 ```   
