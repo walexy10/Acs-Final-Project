@@ -34,23 +34,15 @@ The environment specific code is present under environments directory.
     "Version": "2012-10-17",
     "Statement": [
         {
+            "Sid": "AllObjectActions",
             "Effect": "Allow",
             "Principal": "*",
-            "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::<bucket_name>"
-        },
-        {
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject",
-                "s3:DeleteObject"
-            ],
-            "Resource": "arn:aws:s3:::<bucket_name>/key"
+            "Action": "s3:*Object",
+            "Resource": "arn:aws:s3:::osaliu3finalproject/*"
         }
     ]
-    }
+   }
+
     
     Replace <bucket_name> with actual environment bucket name
 ``` 
