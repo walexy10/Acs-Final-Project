@@ -11,14 +11,20 @@ The environment specific code is present under environments directory.
 
 1. Clone the repository from github.
 ```
-    $ git clone aws-webapp
+    $ git clone git@github.com:walexy10/Acs-Final-Project.git
 ```
-2. Create S3 bucket for images and terraform backend state file. A separate bucket 
-   is required to be created for each environment.
+2. Create SSH key pair to be used on virtual machines. A single key pair
+   is used for all the environments.
+```
+   On AWS Console, go to Amazon S3 -> Key Pairs -> Create Key Pair
+```  
+3. Create S3 bucket for images and terraform backend state file. A separate bucket 
+   is required to be created for each environment. Make the bucket public for all the environments.
 ```
    On AWS Console, go to Amazon S3 -> Buckets -> Create bucket
 ```  
-3. Update bucket policy for each bucket
+
+4. Update bucket policy for each bucket
 ```
    On AWS Console, go to Amazon S3 -> Buckets -> Bucket -> Permissions -> Bucket policy
    and add this bucket policy
@@ -49,7 +55,7 @@ The environment specific code is present under environments directory.
     Replace <bucket_name> with actual environment bucket name
 ``` 
 
-4. Update index.html with bucket name to be used for respective environment. 
+5. Update index.html with bucket name to be used for respective environment. 
 ```
    $ cd aws-webapp/environments/dev/web
    Change <bucket_name> with actual bucket name
@@ -59,7 +65,7 @@ The environment specific code is present under environments directory.
     Update environments/staging/web/index.html with staging environment bucket
     Update environments/staging/web/index.html with production environment bucket
 ```   
-5. Upload index.html and images to respective environment bucket
+6. Upload index.html and images to respective environment bucket
 ```
    On AWS Console, go to Amazon S3 -> Buckets -> Bucket Name -> Upload
    
@@ -68,18 +74,18 @@ The environment specific code is present under environments directory.
     Upload environments/staging/web/index.html and environments/staging/web/images to staging environment bucket
     Upload environments/prod/web/index.html and environments/prod/web/images to production environment bucket
 ``` 
-6. Update bucket for terraform state file
+7. Update bucket for terraform state file
 ```   
     For development environment, go to 
-        $ cd aws-webapp/environments/dev
+        $ cd Acs-Final-Project/environments/dev
         Update provider.tf with development bucket name
       
     For staging environment, go to 
-        $ cd aws-webapp/environments/dev
+        $ cd Acs-Final-Project/environments/dev
         Update provider.tf with staging bucket name
         
     For production environment, go to 
-        $ cd aws-webapp/environments/dev
+        $ cd Acs-Final-Project/environments/dev
         Update provider.tf with production bucket name
 ```
 
