@@ -38,7 +38,7 @@ The environment specific code is present under environments directory.
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::osaliu3finalproject/*"
+            "Resource": "arn:aws:s3:::<bucket_name>/*"
         }
     ]
    }
